@@ -1,0 +1,30 @@
+{
+  "name": "micro-videos",
+  "version": "1.0.0",
+  "description": "Sistema geral de administração, publicação e consumo de vídeos, catálogo de vídeos.",
+  "main": "index.js",
+  "dependencies": {
+    "prettier": "^2.8.3",
+    "ts-node": "^10.9.1"
+  },
+  "devDependencies": {
+    "@types/node": "^14.15.4",
+    "typescript": "^4.9.4"
+  },
+  "scripts": {
+    "ts-node": "ts-node",
+    "tsc": "tsc",
+    "clean:tsc": "rm tsconfig.tsbuildinfo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alexpraxedes/CodeFlix.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alexpraxedes/CodeFlix/issues"
+  },
+  "homepage": "https://github.com/Alexpraxedes/CodeFlix#readme"
+}
