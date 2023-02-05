@@ -1,0 +1,81 @@
+{
+  "name": "micro-videos",
+  "version": "1.0.0",
+  "description": "Sistema geral de administração, publicação e consumo de vídeos, catálogo de vídeos.",
+  "main": "index.js",
+  "imports": {
+    "#core/*": "./dist/@core/*.js",
+    "#category/": "./dist/category/*.js"
+  },
+  "exports": {
+    "./core/application": "./dist/core/application/index.js",
+    "./core/domain": "./dist/core/domain/index.js",
+    "./core/infra": "./dist/core/infra/index.js",
+    "./category/application": "./dist/category/application/index.js",
+    "./category/domain": "./dist/category/domain/index.js",
+    "./category/infra": "./dist/category/infra/index.js"
+  },
+  "typesVersions": {
+    ">=4.0": {
+      "core/application": [
+        "./dist/core/application/index.d.ts"
+      ],
+      "core/domain": [
+        "./dist/core/domain/index.d.ts"
+      ],
+      "core/infra": [
+        "./dist/core/infra/index.d.ts"
+      ],
+      "category/application": [
+        "./dist/category/application/index.d.ts"
+      ],
+      "category/domain": [
+        "./dist/category/domain/index.d.ts"
+      ],
+      "category/infra": [
+        "./dist/category/infra/index.d.ts"
+      ]
+    }
+  },
+  "scripts": {
+    "ts-node": "ts-node",
+    "tsc": "tsc",
+    "tsc:check": "npm run tsc -- --noEmit",
+    "build": "tsc -b ./tsconfig.json",
+    "build:w": "tsc -b ./tsconfig.json -w",
+    "clean:tsc": "rm tsconfig.tsbuildinfo",
+    "test": "jest",
+    "test:cov": "npm run test -- --coverage",
+    "cti": "cti",
+    "cti:core": "sh ./cti.sh"
+  },
+  "dependencies": {
+    "class-validator": "^0.14.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@swc/core": "^1.2.143",
+    "@swc/jest": "^0.2.17",
+    "@types/jest": "^27.5.2",
+    "@types/lodash": "^4.14.191",
+    "@types/node": "^14.14.31",
+    "@types/uuid": "^9.0.0",
+    "jest": "^27.5.1",
+    "prettier": "2.8.3",
+    "regenerator-runtime": "^0.13.11",
+    "create-ts-index": "^1.14.0",
+    "ts-node": "^10.5.0",
+    "typescript": "^4.5.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alexpraxedes/CodeFlix.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alexpraxedes/CodeFlix/issues"
+  },
+  "homepage": "https://github.com/Alexpraxedes/CodeFlix#readme"
+}

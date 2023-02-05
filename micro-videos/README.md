@@ -6,3 +6,7 @@ O módulo ou serviço administrativo é responsável por toda a parte de gerênc
 2. Code refactoring
 3. Encapsulamento
 4. Objetos de valor
+5. Utilização de persistência In Memory
+6. Casos de Uso (regras cruciais x aplicação) - App Business Rules
+7. Monorepo
+8. Dev Container e VSCode remotes
